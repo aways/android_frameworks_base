@@ -96,6 +96,7 @@ public class ToggleManager {
     public static final String CROM_TOGGLE = "CROM";
     public static final String TRDS_TOGGLE = "TRDS";
     public static final String POWERMENU_TOGGLE = "POWERMENU";
+    public static final String PROFILE_TOGGLE = "PROFILE";
     public static final String SCREENSHOT_TOGGLE = "SCREENSHOT";
     public static final String CUSTOM_TOGGLE = "CUSTOM";
     public static final String STAYAWAKE_TOGGLE = "STAYAWAKE";
@@ -164,6 +165,7 @@ public class ToggleManager {
             toggleMap.put(CROM_TOGGLE, CRoMToggle.class);
             toggleMap.put(TRDS_TOGGLE, TRDSToggle.class);
             toggleMap.put(POWERMENU_TOGGLE, PowerMenuToggle.class);
+            toggleMap.put(PROFILE_TOGGLE, ProfileToggle.class);
             toggleMap.put(SCREENSHOT_TOGGLE, ScreenshotToggle.class);
             toggleMap.put(CUSTOM_TOGGLE, CustomToggle.class);
             toggleMap.put(STAYAWAKE_TOGGLE, StayAwakeToggle.class);

@@ -47,6 +47,7 @@
     <string name="toggle_CROM">C-RoM</string>
     <string name="toggle_TRDS">Dark C-RoM</string>
     <string name="toggle_POWERMENU">Power Menu</string>
+    <string name="toggle_PROFILE">Profiles</string>
     <string name="toggle_SCREENSHOT">Screenshot</string>
     <string name="toggle_CUSTOM">Custom</string>
     <string name="toggle_STAYAWAKE">Stay Awake</string>
