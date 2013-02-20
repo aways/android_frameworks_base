@@ -1647,6 +1647,10 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             mPowerButtonTorch = (Settings.System.getIntForUser(resolver,
                     Settings.System.POWER_BUTTON_TORCH, 0, UserHandle.USER_CURRENT) == 1);
 
+            mHasNavigationBar = !mHasSystemNavBar;
+
+            getDimensions();
+
             boolean keyRebindingEnabled = Settings.System.getInt(resolver,
                     Settings.System.HARDWARE_KEY_REBINDING, 0) == 1;
 
