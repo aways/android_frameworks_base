@@ -1603,16 +1603,6 @@ android.util.Log.d("*********************************************", "UPDATE mSys
         return oldSystemUILayout;
     }
 
-    private void closeApplication(String packageName) {
-        try {
-            ActivityManagerNative.getDefault().killApplicationProcess(
-                    packageName, AppGlobals.getPackageManager().getPackageUid(
-                    packageName, UserHandle.myUserId()));
-        } catch (RemoteException e) {
-            // Good luck next time!
-        }
-    }
-
     public String getDefString(ContentResolver resolver, String key, int def) {
         String value = Settings.System.getStringForUser(resolver, key, UserHandle.USER_CURRENT);
         if (value == null)
