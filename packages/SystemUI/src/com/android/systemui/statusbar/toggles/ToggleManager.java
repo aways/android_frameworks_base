@@ -90,6 +90,7 @@ public class ToggleManager {
     public static final String TRDS_TOGGLE = "TRDS";
     public static final String POWERMENU_TOGGLE = "POWERMENU";
     public static final String XPOSED_TOGGLE = "XPOSED";
+    public static final String HYBRID_TOGGLE = "HYBRID";
 
     private int mStyle;
 
@@ -143,6 +144,7 @@ public class ToggleManager {
             toggleMap.put(TRDS_TOGGLE, TRDSToggle.class);
             toggleMap.put(POWERMENU_TOGGLE, PowerMenuToggle.class);
             toggleMap.put(XPOSED_TOGGLE, XposedToggle.class);
+            toggleMap.put(HYBRID_TOGGLE, HybridToggle.class);
             // toggleMap.put(BT_TETHER_TOGGLE, null);
         }
         return toggleMap;

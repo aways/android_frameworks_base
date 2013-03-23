@@ -600,6 +600,7 @@
     <string name="quick_settings_trds_off_label">Dark Carbon Off</string>
     <string name="quick_settings_powermenu_label">Power Menu</string>
     <string name="quick_settings_xposed_label">Xposed</string>
+    <string name="quick_settings_hybrid_label">Hybrid</string>
 
     <!-- Recents Ram Bar -->
     <string name="memory">RAM</string>
