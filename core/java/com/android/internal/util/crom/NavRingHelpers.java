@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.internal.util.carbon;
+package com.android.internal.util.crom;
 
 import android.app.SearchManager;
 import android.content.ComponentName;
@@ -47,7 +47,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.WindowManager;
 
-import static com.android.internal.util.carbon.AwesomeConstants.*;
+import static com.android.internal.util.crom.AwesomeConstants.*;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.TargetDrawable;
 

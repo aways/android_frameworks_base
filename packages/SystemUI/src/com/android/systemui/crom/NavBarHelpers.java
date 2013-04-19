@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.systemui.carbon;
+package com.android.systemui.crom;
 
 import android.app.SearchManager;
 import android.content.ComponentName;
@@ -45,7 +45,7 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
-import static com.android.internal.util.carbon.AwesomeConstants.*;
+import static com.android.internal.util.crom.AwesomeConstants.*;
 import com.android.systemui.R;
 import java.io.File;
 import java.net.URISyntaxException;

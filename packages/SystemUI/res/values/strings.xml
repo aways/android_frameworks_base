@@ -537,7 +537,7 @@
     </string>
 
     <!--  Target/Action Strings -->
-    <string name="shortcut_label">Carbon Actions</string>
+    <string name="shortcut_label">C-RoM Actions</string>
     <string name="action_home">Home</string>
     <string name="action_back">Back</string>
     <string name="action_recents">Recents</string>
@@ -567,10 +567,6 @@
     <string name="quick_settings_silent_off_label">Silent Off</string>
     <string name="quick_settings_fcharge_on_label">F-Charge On</string>
     <string name="quick_settings_fcharge_off_label">F-Charge Off</string>
-    <string name="quick_settings_torch_on_label">Torch On</string>
-    <string name="quick_settings_torch_off_label">Torch Off</string>
-    <string name="quick_settings_nfc_on_label">NFC On</string>
-    <string name="quick_settings_nfc_off_label">NFC Off</string>
     <string name="quick_settings_wifi_tether_on_label">Wifi Tether On</string>
     <string name="quick_settings_wifi_tether_off_label">Wifi Tether Off</string>
     <string name="quick_settings_bt_tether_on_label">BT Tether On</string>
@@ -601,9 +597,9 @@
     <string name="quick_settings_pie_off_label">Pie Off</string>
     <string name="quick_settings_sleep_label">Sleep</string>
     <string name="quick_settings_volume_label">Volume</string>
-    <string name="quick_settings_carbon_label">Carbon</string>
-    <string name="quick_settings_trds_on_label">Dark Carbon On</string>
-    <string name="quick_settings_trds_off_label">Dark Carbon Off</string>
+    <string name="quick_settings_crom_label">C-RoM</string>
+    <string name="quick_settings_trds_on_label">Dark C-RoM On</string>
+    <string name="quick_settings_trds_off_label">Dark C-RoM Off</string>
     <string name="quick_settings_powermenu_label">Power Menu</string>
     <string name="quick_settings_screenshot_label">Screenshot</string>
 

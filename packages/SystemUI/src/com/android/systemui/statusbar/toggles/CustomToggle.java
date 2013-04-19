@@ -20,9 +20,9 @@ import android.provider.Settings;
 import android.view.View;
 import android.widget.ImageView;
 
-import static com.android.internal.util.carbon.AwesomeConstants.*;
-import com.android.internal.util.carbon.NavBarHelpers;
-import com.android.systemui.carbon.AwesomeAction;
+import static com.android.internal.util.crom.AwesomeConstants.*;
+import com.android.internal.util.crom.NavBarHelpers;
+import com.android.systemui.crom.AwesomeAction;
 import com.android.systemui.R;
 
 import java.io.File;

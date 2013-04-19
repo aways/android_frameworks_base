@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.systemui.carbon;
+package com.android.systemui.crom;
 
 import com.android.systemui.statusbar.WidgetView;
 

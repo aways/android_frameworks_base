@@ -120,7 +120,7 @@ import com.android.systemui.statusbar.policy.NotificationRowLayout;
 import com.android.systemui.statusbar.policy.OnSizeChangedListener;
 import com.android.systemui.statusbar.policy.Prefs;
 import com.android.systemui.statusbar.powerwidget.PowerWidget;
-import com.android.systemui.carbon.AwesomeAction;
+import com.android.systemui.crom.AwesomeAction;
 import com.android.systemui.statusbar.toggles.ToggleManager;
 
 import java.io.FileDescriptor;

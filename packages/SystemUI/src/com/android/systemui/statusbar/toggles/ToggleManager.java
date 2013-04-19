@@ -79,8 +79,6 @@ public class ToggleManager {
     public static final String SILENT_TOGGLE = "SILENT";
     public static final String FCHARGE_TOGGLE = "FCHARGE";
     public static final String SYNC_TOGGLE = "SYNC";
-    public static final String NFC_TOGGLE = "NFC";
-    public static final String TORCH_TOGGLE = "TORCH";
     public static final String WIFI_TETHER_TOGGLE = "WIFITETHER";
     // public static final String BT_TETHER_TOGGLE = "BTTETHER";
     public static final String USB_TETHER_TOGGLE = "USBTETHER";
@@ -94,7 +92,7 @@ public class ToggleManager {
     public static final String QUIETHOURS_TOGGLE = "QUIETHOURS";
     public static final String PIE_TOGGLE = "PIE";
     public static final String SLEEP_TOGGLE = "SLEEP";
-    public static final String CARBON_TOGGLE = "CARBON";
+    public static final String CROM_TOGGLE = "CROM";
     public static final String TRDS_TOGGLE = "TRDS";
     public static final String POWERMENU_TOGGLE = "POWERMENU";
     public static final String SCREENSHOT_TOGGLE = "SCREENSHOT";
@@ -143,10 +141,6 @@ public class ToggleManager {
             toggleMap.put(SILENT_TOGGLE, SilentToggle.class);
             toggleMap.put(FCHARGE_TOGGLE, FastChargeToggle.class);
             toggleMap.put(SYNC_TOGGLE, SyncToggle.class);
-            if (mContext.getSystemService(Context.NFC_SERVICE) != null) {
-                toggleMap.put(NFC_TOGGLE, NfcToggle.class);
-            }
-            toggleMap.put(TORCH_TOGGLE, TorchToggle.class);
             toggleMap.put(USB_TETHER_TOGGLE, UsbTetherToggle.class);
             if (((TelephonyManager)mContext.getSystemService(Context.TELEPHONY_SERVICE))
                     .getPhoneType() == PhoneConstants.PHONE_TYPE_GSM) {
@@ -163,7 +157,7 @@ public class ToggleManager {
             toggleMap.put(QUIETHOURS_TOGGLE, QuietHoursToggle.class);
             toggleMap.put(PIE_TOGGLE, PieToggle.class);
             toggleMap.put(SLEEP_TOGGLE, SleepToggle.class);
-            toggleMap.put(CARBON_TOGGLE, CarbonToggle.class);
+            toggleMap.put(CROM_TOGGLE, CRoMToggle.class);
             toggleMap.put(TRDS_TOGGLE, TRDSToggle.class);
             toggleMap.put(POWERMENU_TOGGLE, PowerMenuToggle.class);
             toggleMap.put(SCREENSHOT_TOGGLE, ScreenshotToggle.class);

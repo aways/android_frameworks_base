@@ -51,10 +51,10 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import static com.android.internal.util.carbon.AwesomeConstants.*;
-import com.android.internal.util.carbon.BackgroundAlphaColorDrawable;
+import static com.android.internal.util.crom.AwesomeConstants.*;
+import com.android.internal.util.crom.BackgroundAlphaColorDrawable;
 import com.android.internal.statusbar.IStatusBarService;
-import com.android.internal.util.carbon.NavBarHelpers;
+import com.android.internal.util.crom.NavBarHelpers;
 import com.android.systemui.R;
 import com.android.systemui.TransparencyManager;
 import com.android.systemui.statusbar.policy.KeyButtonView;

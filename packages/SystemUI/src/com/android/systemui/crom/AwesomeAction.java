@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.systemui.carbon;
+package com.android.systemui.crom;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -54,7 +54,7 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
-import static com.android.internal.util.carbon.AwesomeConstants.*;
+import static com.android.internal.util.crom.AwesomeConstants.*;
 import com.android.internal.statusbar.IStatusBarService;
 import com.android.internal.R;
 

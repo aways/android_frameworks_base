@@ -76,8 +76,8 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import static com.android.internal.util.carbon.AwesomeConstants.*;
-import com.android.internal.util.carbon.NavRingHelpers;
+import static com.android.internal.util.crom.AwesomeConstants.*;
+import com.android.internal.util.crom.NavRingHelpers;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.GlowPadView.OnTriggerListener;
 import com.android.internal.widget.multiwaveview.TargetDrawable;
@@ -88,7 +88,7 @@ import com.android.systemui.statusbar.CommandQueue;
 import com.android.systemui.statusbar.phone.PhoneStatusBar;
 import com.android.systemui.statusbar.tablet.StatusBarPanel;
 import com.android.systemui.statusbar.tablet.TabletStatusBar;
-import com.android.systemui.carbon.AwesomeAction;
+import com.android.systemui.crom.AwesomeAction;
 
 import java.util.ArrayList;
 import java.util.Arrays;

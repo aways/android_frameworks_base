@@ -8,19 +8,19 @@ import android.view.View;
 
 import com.android.systemui.R;
 
-public class CarbonToggle extends BaseToggle {
+public class CRoMToggle extends BaseToggle {
 
     @Override
     protected void init(Context c, int style) {
         super.init(c, style);
-        setIcon(R.drawable.ic_qs_carbon);
-        setLabel(R.string.quick_settings_carbon_label);
+        setIcon(R.drawable.ic_qs_crom);
+        setLabel(R.string.quick_settings_crom_label);
     }
 
     @Override
     public void onClick(View v) {
         Intent intent = new Intent("android.intent.action.MAIN");
-        intent.setClassName("com.android.settings", "com.android.settings.Settings$CarbonSettingsActivity");
+        intent.setClassName("com.android.settings", "com.android.settings.Settings$CromSettingsActivity");
         intent.addCategory("android.intent.category.LAUNCHER");
 
         collapseStatusBar();

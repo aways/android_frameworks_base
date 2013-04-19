@@ -73,7 +73,7 @@
     <!-- Power widget -->
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
 
-    <!-- carbon extra permissions -->
+    <!-- crom extra permissions -->
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -158,9 +158,9 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".carbon.AwesomeReceiver">
+            android:name=".crom.AwesomeReceiver">
             <intent-filter>
-                <action android:name="com.android.systemui.carbon.LAUNCH_ACTION" />
+                <action android:name="com.android.systemui.crom.LAUNCH_ACTION" />
             </intent-filter>
         </receiver>
 
@@ -237,7 +237,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.systemui.carbon.NavbarToggle"
+            android:name="com.android.systemui.crom.NavbarToggle"
             android:label="@string/toggle_navbar"
             android:icon="@drawable/toggle_navbar"
             android:theme="@android:style/Theme.Holo.Panel"
@@ -250,7 +250,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.systemui.carbon.WidgetToggle"
+            android:name="com.android.systemui.crom.WidgetToggle"
             android:label="@string/toggle_widgets"
             android:icon="@drawable/ic_sysbar_widget"
             android:theme="@android:style/Theme.Holo.Panel"
@@ -263,7 +263,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.systemui.carbon.RingVibToggle"
+            android:name="com.android.systemui.crom.RingVibToggle"
             android:label="@string/toggle_ring_vib"
             android:icon="@drawable/ic_lockscreen_vib"
             android:theme="@android:style/Theme.Holo.Panel"
@@ -276,7 +276,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.systemui.carbon.RingSilentToggle"
+            android:name="com.android.systemui.crom.RingSilentToggle"
             android:label="@string/toggle_ring_silent"
             android:icon="@drawable/ic_lockscreen_silent"
             android:theme="@android:style/Theme.Holo.Panel"
@@ -289,7 +289,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.systemui.carbon.RingVibSilentToggle"
+            android:name="com.android.systemui.crom.RingVibSilentToggle"
             android:label="@string/toggle_ring_vib_silent"
             android:icon="@drawable/ic_lockscreen_soundon"
             android:theme="@android:style/Theme.Holo.Panel"

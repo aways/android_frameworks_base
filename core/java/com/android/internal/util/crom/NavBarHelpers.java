@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.internal.util.carbon;
+package com.android.internal.util.crom;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,7 +24,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
-import static com.android.internal.util.carbon.AwesomeConstants.*;
+import static com.android.internal.util.crom.AwesomeConstants.*;
 import java.net.URISyntaxException;
 
 public class NavBarHelpers {
