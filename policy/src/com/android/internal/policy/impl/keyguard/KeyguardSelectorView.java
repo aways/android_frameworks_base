@@ -88,6 +88,7 @@ public class KeyguardSelectorView extends LinearLayout implements KeyguardSecuri
     private boolean mIsScreenLarge;
     private int mCreationOrientation;
     private UnlockReceiver receiver;
+    private boolean mUnlockBroadcasted = false;
     private IntentFilter filter;
 
     OnTriggerListener mOnTriggerListener = new OnTriggerListener() {
