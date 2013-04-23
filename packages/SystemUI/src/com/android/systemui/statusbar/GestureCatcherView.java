@@ -1,7 +1,7 @@
 package com.android.systemui.statusbar;
 
 import com.android.systemui.R;
-import com.android.systemui.carbon.AokpSwipeRibbon;
+import com.android.systemui.crom.AokpSwipeRibbon;
 
 import android.content.ContentResolver;
 import android.content.Context;
