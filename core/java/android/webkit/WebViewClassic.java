@@ -4449,7 +4449,7 @@ public final class WebViewClassic implements WebViewProvider, WebViewProvider.Sc
     public void clearSelection() {
         selectionDone();
         if (mWebViewCore != null) {
-            mWebViewCore.sendMessage(EventHub.CLEAR_SELECT_TEXT);
+            mWebViewCore.sendMessage(EventHub.SELECT_TEXT, null);
         }
     }
 
