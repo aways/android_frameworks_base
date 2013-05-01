@@ -49,6 +49,7 @@ import android.os.Parcelable;
 import android.os.RemoteException;
 import android.os.StrictMode;
 import android.os.UserHandle;
+import android.provider.Settings;
 import android.text.Selection;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
@@ -1878,7 +1879,7 @@ public class Activity extends ContextThemeWrapper
      * @see #setContentView(android.view.View)
      * @see #setContentView(android.view.View, android.view.ViewGroup.LayoutParams)
      */
-    public void setContentView(int layoutResID) {
+    public void setContentView(int layoutResID) {import android.provider.Settings;
         getWindow().setContentView(layoutResID);
         initActionBar();
     }
@@ -1953,7 +1954,7 @@ public class Activity extends ContextThemeWrapper
      * @see #setDefaultKeyMode
      */
     static public final int DEFAULT_KEYS_DIALER = 1;
-    /**
+    /**import android.provider.Settings;
      * Use with {@link #setDefaultKeyMode} to execute a menu shortcut in
      * default key handling.
      * 
@@ -2031,7 +2032,7 @@ public class Activity extends ContextThemeWrapper
 
     /**
      * Called when a key was pressed down and not handled by any of the views
-     * inside of the activity. So, for example, key presses while the cursor 
+     * inside of the activity. So, for example, keyimport android.provider.Settings; presses while the cursor 
      * is inside a TextView will not trigger the event (unless it is a navigation
      * to another object) because TextView handles its own key presses.
      * 
@@ -2349,7 +2350,7 @@ public class Activity extends ContextThemeWrapper
         Window w = getWindow();
         if (w != null) {
             View d = w.getDecorView();
-            if (d != null) {
+            if (d != null) {import android.provider.Settings;
                 return d.hasWindowFocus();
             }
         }
