@@ -327,6 +327,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     int mUserNavBarWidth;
     int mUserUIMode; //User selected UI Mode (Phablet/Tablet, etc)
     int mStockUIMode; // UI Mode as dictated by screen size.
+    private Intent closeAppWindow;
 
     WindowState mKeyguard = null;
     KeyguardViewMediator mKeyguardMediator;
@@ -1630,6 +1631,8 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     }
 
     public void updateSettings() {
+        closeAppWindow = new Intent();
+        closeAppWindow.setAction("com.android.systemui.ACTION_HIDE_APP_WINDOW");
         ContentResolver resolver = mContext.getContentResolver();
 
         mExpandedMode = Settings.System.getInt(mContext.getContentResolver(),
@@ -2579,6 +2582,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     /** {@inheritDoc} */
     @Override
     public long interceptKeyBeforeDispatching(WindowState win, KeyEvent event, int policyFlags) {
+        mContext.sendBroadcastAsUser(closeAppWindow, UserHandle.ALL);
         final boolean keyguardOn = keyguardOn();
         final int keyCode = event.getKeyCode();
         final int repeatCount = event.getRepeatCount();
