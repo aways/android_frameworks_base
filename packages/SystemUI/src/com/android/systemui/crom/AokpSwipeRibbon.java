@@ -406,7 +406,6 @@ public class AokpSwipeRibbon extends LinearLayout {
             toggleMap.put(SILENT_TOGGLE, SilentToggle.class);
             toggleMap.put(FCHARGE_TOGGLE, FastChargeToggle.class);
             toggleMap.put(SYNC_TOGGLE, SyncToggle.class);
-            }
             toggleMap.put(USB_TETHER_TOGGLE, UsbTetherToggle.class);
             if (((TelephonyManager)mContext.getSystemService(Context.TELEPHONY_SERVICE))
                     .getPhoneType() == PhoneConstants.PHONE_TYPE_GSM) {
@@ -424,7 +423,7 @@ public class AokpSwipeRibbon extends LinearLayout {
             toggleMap.put(STATUSBAR_TOGGLE, StatusbarToggle.class);
             toggleMap.put(PIE_TOGGLE, PieToggle.class);
             toggleMap.put(SLEEP_TOGGLE, SleepToggle.class);
-            toggleMap.put(CROM_TOGGLE, CromToggle.class);
+            toggleMap.put(CROM_TOGGLE, CRoMToggle.class);
             toggleMap.put(TRDS_TOGGLE, TRDSToggle.class);
             toggleMap.put(POWERMENU_TOGGLE, PowerMenuToggle.class);
             toggleMap.put(SCREENSHOT_TOGGLE, ScreenshotToggle.class);
