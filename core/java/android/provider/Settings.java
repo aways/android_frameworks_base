@@ -3540,6 +3540,18 @@ public final class Settings {
          */
         public static final String PIE_LAST_APP = "pie_last_app";
 
+        /**
+         * Pie kill task, default to 0 (off)
+         * @hide
+         */
+        public static final String PIE_KILL_TASK = "pie_kill_task";
+
+        /**
+         * Pie action widgets, default to off
+         * @hide
+         */
+        public static final String PIE_APP_WINDOW = "pie_app_window";
+
         /*
          * Pie gap angle, should default to 3
          * @hide
