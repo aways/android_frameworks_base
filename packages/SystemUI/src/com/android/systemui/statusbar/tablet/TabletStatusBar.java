@@ -46,7 +46,6 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.ServiceManager;
-import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
@@ -970,7 +969,6 @@ public class TabletStatusBar extends BaseStatusBar implements
         public void run() {
                 doubleClickCounter = 0;
                 animateCollapsePanels();
-                dismissKeyguard();
                 AwesomeAction.launchAction(mContext, mClockActions[shortClick]);
         }
     };
@@ -988,7 +986,6 @@ public class TabletStatusBar extends BaseStatusBar implements
                     mHandler.removeCallbacks(DelayShortPress);
                     v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
                     animateCollapsePanels();
-                    dismissKeyguard();
                     AwesomeAction.launchAction(mContext, mClockActions[doubleClick]);
                     mHandler.postDelayed(ResetDoubleClickCounter, 50);
                 } else {
@@ -999,7 +996,6 @@ public class TabletStatusBar extends BaseStatusBar implements
             } else {
                 v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
                 animateCollapsePanels();
-                dismissKeyguard();
                 AwesomeAction.launchAction(mContext, mClockActions[shortClick]);
             }
         }
@@ -1010,17 +1006,10 @@ public class TabletStatusBar extends BaseStatusBar implements
         public boolean onLongClick(View v) {
             animateCollapsePanels();
             v.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS);
-            dismissKeyguard();
             AwesomeAction.launchAction(mContext, mClockActions[longClick]);
             return true;
         }
     };
-
-    private void dismissKeyguard() {
-        Intent u = new Intent();
-        u.setAction("com.android.lockscreen.ACTION_UNLOCK_RECEIVER");
-        mContext.sendBroadcastAsUser(u, UserHandle.ALL);
-    }
 
     public int getStatusBarHeight() {
         if (mStatusBarView == null) {
