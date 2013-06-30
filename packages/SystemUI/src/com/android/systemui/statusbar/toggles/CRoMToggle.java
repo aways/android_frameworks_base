@@ -21,7 +21,7 @@ public class CRoMToggle extends BaseToggle {
     public void onClick(View v) {
         try {
             Intent intent = new Intent("android.intent.action.MAIN");
-            intent.setClassName("com.android.settings", "com.android.settings.Settings$CromSettingsActivity");
+            intent.setClassName("com.android.settings", "com.android.settings.Settings$CromActivity");
             intent.addFlags(Intent.FLAG_FLOATING_WINDOW);
             startActivity(intent);
         } catch(NullPointerException e) {
@@ -32,7 +32,7 @@ public class CRoMToggle extends BaseToggle {
     @Override
     public boolean onLongClick(View v) {
         Intent intent = new Intent("android.intent.action.MAIN");
-        intent.setClassName("com.android.settings", "com.android.settings.Settings$CromSettingsActivity");
+        intent.setClassName("com.android.settings", "com.android.settings.Settings$CromActivity");
         intent.addCategory("android.intent.category.LAUNCHER");
         collapseStatusBar();
         startActivity(intent);
