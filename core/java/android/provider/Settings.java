@@ -5063,7 +5063,7 @@ public final class Settings {
         public static final String NOTIFICATION_CONVERT_SOUND_TO_VIBRATION = "convert_sound_to_vibration";
 
         /**
-         * ListView Animations [WIP]
+         * ListView Animations
          * 0 == None
          * 1 == Wave (Left)
          * 2 == Wave (Right)
@@ -5075,6 +5075,19 @@ public final class Settings {
          * 8 == Translate (Right)
          */
          public static final String LISTVIEW_ANIMATION = "listview_animation";
+
+        /**
+         * ListView Interpolators
+         * 0 == None
+         * 1 == accelerate_interpolator
+         * 2 == decelerate_interpolator
+         * 3 == accelerate_decelerate_interpolator
+         * 4 == anticipate_interpolator
+         * 5 == overshoot_interpolator
+         * 6 == anticipate_overshoot_interpolator
+         * 7 == bounce_interpolator
+         */
+         public static final String LISTVIEW_INTERPOLATOR = "listview_interpolator";
     }
 
     /**
