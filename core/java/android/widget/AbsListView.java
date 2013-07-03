@@ -2284,7 +2284,7 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
                 break;
         }
         anim.setDuration(500);
-        int mInterpolator = Settings.System.getInt(mContext.getContentResolver(),Settings.System.LISTVIEW_INTERPO * This code has been modified. Portions copyright (C) 2013, ThinkingBridge Project.LATOR, 0);
+         int mInterpolator = Settings.System.getInt(mContext.getContentResolver(),Settings.System.LISTVIEW_INTERPOLATOR, 0);
         switch (mInterpolator) {
             case 1:
                 anim.setInterpolator(AnimationUtils.loadInterpolator(mContext, android.R.anim.accelerate_interpolator));
