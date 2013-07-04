@@ -698,6 +698,7 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
     /**
      * for ListView Animations
      */
+    boolean mIsWidget;
     boolean mIsScrolling;
     int mWidth, mHeight = 0;
     int mvPosition;
@@ -2171,7 +2172,7 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
         if (scrapView != null) {
             child = mAdapter.getView(position, scrapView, this);
 
-            if(mIsScrolling) {
+            if(mIsScrolling && !mIsWidget) {
                 child = setAnimation(child);
             }
 
@@ -3173,6 +3174,7 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
                     mScrollProfilingStarted = true;
                 }
             }
+            mIsWidget = false;
 
             if (mScrollStrictSpan == null) {
                 // If it's non-null, we're already in a scroll.
@@ -5365,6 +5367,7 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
 
     @Override
     protected void handleDataChanged() {
+        mIsWidget = true;
         int count = mItemCount;
         int lastHandledItemCount = mLastHandledItemCount;
         mLastHandledItemCount = mItemCount;
