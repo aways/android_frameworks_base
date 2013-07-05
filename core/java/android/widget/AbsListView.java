@@ -69,7 +69,6 @@ import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputConnectionWrapper;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.RemoteViews.OnClickHandler;
-
 import com.android.internal.R;
 
 import java.util.ArrayList;
