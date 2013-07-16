@@ -3906,7 +3906,7 @@ public final class Settings {
          */
         public static final String HALO_CIRCLE_COLOR = "halo_circle_color";
 
-	/**
+        /**
          * Screen-On Notification Light,
          * should default to 1 (yes, Notification Light is enabled when screen is on)
          * @hide
