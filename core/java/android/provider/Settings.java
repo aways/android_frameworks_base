@@ -3913,7 +3913,11 @@ public final class Settings {
          */
         public static final String SCREEN_ON_NOTIFICATION_LED = "screen_on_notification_led";
 
-
+        /**
+         * HALO size fraction, default is 1.0f (normal)
+         * @hide
+         */
+        public static final String HALO_SIZE = "halo_size";
 
         /**
          * Swap volume buttons when the screen is rotated by 90 or 180 degrees
@@ -3927,25 +3931,25 @@ public final class Settings {
          */
         public static final String NAVIGATION_BAR_WIDTH_PORT = "navigation_bar_width_port";
 
-        /**
+       /**
         *
         * @hide
         */
         public static final String NAVIGATION_BAR_WIDTH_LAND = "navigation_bar_width_land";
 
-        /**
-         * @hide
-         */
+       /**
+        * @hide
+        */
         public static final String NAV_HIDE_TIMEOUT = "nav_hide_timeout";
 
-        /**
-         * @hide
-         */
+       /**
+        * @hide
+        */
         public static final String NAV_HIDE_ENABLE = "nav_hide_enable";
 
-        /**
-         * @hide
-         */
+       /**
+        * @hide
+        */
         public static final String DRAG_HANDLE_WEIGHT = "drag_handle_weight";
 
         /**
